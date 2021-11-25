@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginVertical="@dimen/margin_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/background_items"
+    app:contentPadding="@dimen/margin_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <com.google.android.material.card.MaterialCardView
+           android:id="@+id/iv_ItemShowCard_ImageView"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:backgroundTint="@color/background_AppBar">
+           <ImageView
+               android:id="@+id/iv_ItemShowCard_ImageView_into"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:adjustViewBounds="true"
+               android:scaleType="centerCrop"/>
+       </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_ItemShowCard_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Small_margin_And_padding"
+            android:layout_toEndOf="@id/iv_ItemShowCard_ImageView"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Tree"
+            android:layout_marginEnd="@dimen/large_margin_And_padding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Content_Text_Size" />
+
+        <ImageView
+            android:id="@+id/iv_ItemShowCard_SeeMore"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:layout_marginEnd="@dimen/Small_margin_And_padding"
+            app:srcCompat="@drawable/ic_see_more" />
+        <TextView
+            android:id="@+id/tv_ItemShowCard_Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginBottom="@dimen/margin_vertical"
+            android:paddingHorizontal="@dimen/Small_margin_And_padding"
+            android:layout_marginTop="@dimen/Small_margin_And_padding"
+            android:layout_marginEnd="@dimen/standard_margin_And_padding"
+            android:textColor="@color/color_content_text"
+            android:textSize="@dimen/details_Text_Size"
+            android:layout_toEndOf="@id/iv_ItemShowCard_ImageView"
+            android:layout_below="@id/tv_ItemShowCard_Question"/>
+        <TextView
+            android:id="@+id/tv_ItemShowCard_BoxNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="box 1"
+            android:layout_marginBottom="@dimen/margin_vertical"
+            android:textSize="@dimen/details_Text_Size"
+            android:textColor="@color/color_details_text"
+            android:layout_below="@id/tv_ItemShowCard_Answer"
+            android:layout_marginStart="@dimen/Small_margin_And_padding"
+            android:layout_toRightOf="@id/iv_ItemShowCard_ImageView"/>
+
+        <TextView
+            android:id="@+id/tv_ItemShowCard_BtnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/details_Text_Size"
+            android:background="@drawable/shape_for_delete_btn"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="@dimen/large_margin_And_padding"
+            android:layout_alignParentEnd="true"
+
+            android:layout_below="@id/iv_ItemShowCard_ImageView"
+            android:layout_marginEnd="@dimen/standard_margin_And_padding" />
+
+        <TextView
+            android:id="@+id/tv_TrueNumCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_ItemShowCard_ImageView"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/tv_ReviewNumCard"
+            android:layout_toRightOf="@id/iv_ViewCard_isFavoriteCard"
+            android:text="8"
+            android:textColor="@color/green"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_ReviewNumCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_ItemShowCard_ImageView"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/tv_FalseNumCard"
+            android:text="12"
+            android:textColor="@color/end_gradiant"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_FalseNumCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_ItemShowCard_ImageView"
+            android:layout_alignEnd="@+id/iv_ItemShowCard_ImageView"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_ViewCard_isFavoriteCard"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/iv_ItemShowCard_ImageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="9dp"
+            app:srcCompat="@drawable/heart" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

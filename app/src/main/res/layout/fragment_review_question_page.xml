@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="16dp"
+    android:background="@color/background_items2">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/frameLayout_Answer"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@drawable/edit_text_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_Review_Question_ImageQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:srcCompat="@drawable/download" />
+
+        <ImageView
+            android:id="@+id/iv_Review_A_ImageWhenEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:srcCompat="@drawable/empty_file" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/iv_Review_A_PlayAudio"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout_Answer"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout_Answer"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_Answer"
+        app:srcCompat="@drawable/ic_play" />
+
+    <TextView
+        android:id="@+id/tv_Review_A_TextAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="What is this ?"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Content_Text_Size"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout_Answer"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout_Answer"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Review_A_PlayAudio" />
+
+    <TextView
+        android:id="@+id/tv_Review_A_False"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="center"
+        android:paddingVertical="@dimen/margin_vertical"
+        android:text="@string/Show_Answer"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider_Review_Q"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Review_Q_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="8 s"
+        android:textColor="@color/white"
+        android:padding="@dimen/Small_margin_And_padding"
+        android:background="@drawable/circle_timer"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Review_A_False"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Review_A_TextAnswer" />
+
+    <View
+        android:id="@+id/divider_Review_Q"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="visible"
+        android:background="@drawable/divider_vertical_style"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_Review_A_False"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Review_Answer_TrueBtn"
+        app:layout_constraintTop_toTopOf="@+id/tv_Review_A_False" />
+
+    <TextView
+        android:id="@+id/tv_Review_Answer_TrueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/Small_margin_And_padding"
+        android:text="@string/skip"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_Review_A_False"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_Review_A_False" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

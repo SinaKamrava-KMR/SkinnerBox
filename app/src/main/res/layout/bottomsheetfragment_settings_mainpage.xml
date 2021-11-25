@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_For_dialogs">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingBottom="@dimen/large_margin_And_padding"
+        android:paddingHorizontal="@dimen/standard_margin_And_padding"
+        android:background="@drawable/background_bottomsheet">
+
+
+        <View
+            android:id="@+id/divider_groupMainPage_settings"
+            android:layout_width="70dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/grey_1"
+            android:background="@drawable/divider_vertical_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_groupMainPage_settingsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/settings"
+            android:textColor="@color/color_details_text"
+            app:layout_constraintEnd_toEndOf="@+id/divider_groupMainPage_settings"
+            app:layout_constraintStart_toStartOf="@+id/divider_groupMainPage_settings"
+            app:layout_constraintTop_toBottomOf="@+id/divider_groupMainPage_settings" />
+
+        <ImageView
+            android:id="@+id/iv_language"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/standard_margin_And_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_groupMainPage_settingsText"
+            app:srcCompat="@drawable/ic_languages" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Small_margin_And_padding"
+            android:text="@string/language"
+            android:textSize="@dimen/Content_Text_Size"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_language"
+            app:layout_constraintStart_toEndOf="@+id/iv_language"
+            app:layout_constraintTop_toTopOf="@+id/iv_language" />
+
+        <ImageView
+            android:id="@+id/btn_bottomSheet_changeLanguage"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="@dimen/Small_margin_And_padding"
+            android:rotation="90"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_language"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_language"
+            app:srcCompat="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_languageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/English"
+            android:textColor="@color/color_details_text"
+            android:textSize="@dimen/details_Text_Size"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_bottomSheet_changeLanguage"
+            app:layout_constraintEnd_toStartOf="@+id/btn_bottomSheet_changeLanguage"
+            app:layout_constraintTop_toTopOf="@+id/btn_bottomSheet_changeLanguage" />
+
+        <ImageView
+            android:id="@+id/tv_bottomSheet_exportAllGroup"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/standard_margin_And_padding"
+            app:layout_constraintEnd_toEndOf="@+id/iv_language"
+            app:layout_constraintStart_toStartOf="@+id/iv_language"
+            app:layout_constraintTop_toBottomOf="@+id/iv_language"
+            app:srcCompat="@drawable/ic_export" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_ExportAllGroups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exportAllGroups"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Content_Text_Size"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_bottomSheet_exportAllGroup"
+            app:layout_constraintStart_toStartOf="@+id/tv_bottomSheet_language"
+            app:layout_constraintTop_toTopOf="@+id/tv_bottomSheet_exportAllGroup" />
+
+        <ImageView
+            android:id="@+id/iv_bell"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/standard_margin_And_padding"
+            app:layout_constraintEnd_toEndOf="@+id/tv_bottomSheet_exportAllGroup"
+            app:layout_constraintStart_toStartOf="@+id/tv_bottomSheet_exportAllGroup"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bottomSheet_exportAllGroup"
+            app:srcCompat="@drawable/ic_bell" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_ReviewAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ReviewAlert"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Content_Text_Size"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_bell"
+            app:layout_constraintStart_toStartOf="@+id/tv_bottomSheet_ExportAllGroups"
+            app:layout_constraintTop_toTopOf="@+id/iv_bell" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_statusNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/off"
+            android:textSize="@dimen/details_Text_Size"
+            android:textColor="@color/color_details_text"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_bottomSheet_ReviewAlert"
+            app:layout_constraintEnd_toEndOf="@+id/tv_bottomSheet_languageText"
+            app:layout_constraintStart_toStartOf="@+id/tv_bottomSheet_languageText"
+            app:layout_constraintTop_toTopOf="@+id/tv_bottomSheet_ReviewAlert" />
+
+        <ImageView
+            android:id="@+id/iv_font"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/standard_margin_And_padding"
+            app:layout_constraintEnd_toEndOf="@+id/iv_bell"
+            app:layout_constraintStart_toStartOf="@+id/iv_bell"
+            app:layout_constraintTop_toBottomOf="@+id/iv_bell"
+            app:srcCompat="@drawable/ic_font" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/font"
+            android:textSize="@dimen/Content_Text_Size"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_font"
+            app:layout_constraintStart_toStartOf="@+id/tv_bottomSheet_ReviewAlert"
+            app:layout_constraintTop_toTopOf="@+id/iv_font" />
+
+        <ImageView
+            android:id="@+id/iv_favoriteCard"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/standard_margin_And_padding"
+            app:layout_constraintEnd_toEndOf="@+id/iv_font"
+            app:layout_constraintStart_toStartOf="@+id/iv_font"
+            app:layout_constraintTop_toBottomOf="@+id/iv_font"
+            app:srcCompat="@drawable/ic_favorite" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_SeeAllCardsCards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/viewAllCards"
+            android:textSize="@dimen/Content_Text_Size"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_favoriteCard"
+            app:layout_constraintStart_toStartOf="@+id/tv_bottomSheet_font"
+            app:layout_constraintTop_toTopOf="@+id/iv_favoriteCard" />
+
+        <ImageView
+            android:id="@+id/iv_deleteAllGroup"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="@dimen/standard_margin_And_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/iv_favoriteCard"
+            app:layout_constraintStart_toStartOf="@+id/iv_favoriteCard"
+            app:layout_constraintTop_toBottomOf="@+id/iv_favoriteCard"
+            app:srcCompat="@drawable/ic_delete_folder" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_DeleteAllCardsAndGroups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deleteAllGroups"
+            android:textSize="@dimen/Content_Text_Size"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_deleteAllGroup"
+            app:layout_constraintStart_toStartOf="@+id/tv_bottomSheet_SeeAllCardsCards"
+            app:layout_constraintTop_toTopOf="@+id/iv_deleteAllGroup" />
+
+        <ImageView
+            android:id="@+id/iv_changeFont"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:rotation="90"
+            android:layout_marginTop="@dimen/Small_margin_And_padding"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_font"
+            app:layout_constraintEnd_toEndOf="@+id/btn_bottomSheet_changeLanguage"
+            app:layout_constraintTop_toTopOf="@+id/iv_font"
+            app:srcCompat="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_selectedFontSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18 sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/color_details_text"
+            android:textSize="@dimen/details_Text_Size"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_changeFont"
+            app:layout_constraintEnd_toEndOf="@+id/tv_bottomSheet_languageText"
+            app:layout_constraintTop_toTopOf="@+id/iv_changeFont" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

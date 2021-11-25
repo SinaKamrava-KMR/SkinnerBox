@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_page2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_cards_review_detailse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/heder_shape_text"
+                android:gravity="center_horizontal"
+                android:paddingVertical="@dimen/margin_vertical"
+                android:text="@string/Card_preparation_table"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Group_Text_Size" />
+
+           <HorizontalScrollView
+               android:id="@+id/scrollView"
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:id="@+id/linear_group_page_show_CardPreparationTable"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="60dp"
+                   android:layout_marginBottom="20dp"
+                   android:gravity="center"
+                   android:orientation="horizontal">
+
+                   <LinearLayout
+                       android:id="@+id/li_group_page_Today1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:clickable="true"
+                       android:elevation="2dp"
+                       android:orientation="vertical"
+                       android:padding="10dp">
+
+                       <TextView
+                           android:id="@+id/tv_date1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:text="2021/3/4"
+                           android:textColor="@color/color_content_text" />
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:layout_height="2dp"
+                           android:background="?android:attr/listDivider"
+                           android:backgroundTint="@color/color_content_text" />
+
+                       <TextView
+                           android:id="@+id/tv_group_page_numCardsToday1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginTop="6dp"
+                           android:gravity="center"
+                           android:text="125"
+                           android:textColor="@color/white" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/li_group_page_today2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:clickable="true"
+                       android:elevation="2dp"
+                       android:orientation="vertical"
+                       android:padding="10dp">
+
+                       <TextView
+                           android:id="@+id/tv_date2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:text="2021/3/5"
+                           android:textColor="@color/color_content_text" />
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:background="?android:attr/listDivider"
+                           android:backgroundTint="@color/color_content_text" />
+
+                       <TextView
+                           android:id="@+id/tv_group_page_numCardsDay2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginTop="6dp"
+                           android:gravity="center"
+                           android:text="100"
+                           android:textColor="@color/white" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/li_group_page_clickable_day3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:clickable="true"
+                       android:elevation="2dp"
+                       android:orientation="vertical"
+                       android:padding="10dp">
+
+                       <TextView
+                           android:id="@+id/tv_date3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:text="2021/3/6"
+                           android:textColor="@color/color_content_text" />
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:background="?android:attr/listDivider"
+                           android:backgroundTint="@color/color_content_text" />
+
+                       <TextView
+                           android:id="@+id/tv_group_page_numCardsDay3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginTop="6dp"
+                           android:gravity="center"
+                           android:text="56"
+                           android:textColor="@color/white" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/li_group_page_day4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:clickable="true"
+                       android:elevation="2dp"
+                       android:orientation="vertical"
+                       android:padding="10dp">
+
+                       <TextView
+                           android:id="@+id/tv_date4"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:text="2021/3/7"
+                           android:textColor="@color/color_content_text" />
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:background="?android:attr/listDivider"
+                           android:backgroundTint="@color/color_content_text" />
+
+                       <TextView
+                           android:id="@+id/tv_group_page_numCardsDay4"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginTop="6dp"
+                           android:gravity="center"
+                           android:text="36"
+                           android:textColor="@color/white" />
+                   </LinearLayout>
+
+
+               </LinearLayout>
+           </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/tv_statistics_Ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ok"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_text_shape"
+                android:paddingVertical="@dimen/margin_vertical"
+                android:paddingHorizontal="100dp"
+                android:layout_marginVertical="@dimen/Small_margin_And_padding"
+                android:layout_below="@+id/scrollView"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

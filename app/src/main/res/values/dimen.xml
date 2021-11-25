@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Title_Text_Size">20sp</dimen>
+    <dimen name="Group_Text_Size">18sp</dimen>
+    <dimen name="details_Text_Size">13sp</dimen>
+    <dimen name="Content_Text_Size">15sp</dimen>
+    <dimen name="Small_margin_And_padding">12dp</dimen>
+    <dimen name="standard_margin_And_padding">24dp</dimen>
+    <dimen name="large_margin_And_padding">32dp</dimen>
+    <dimen name="margin_vertical">8dp</dimen>
+    <dimen name="dialog_radius">6dp</dimen>
+
+</resources>

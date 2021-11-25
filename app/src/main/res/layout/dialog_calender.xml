@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_page2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_dialog_shape">
+        <TextView
+            android:id="@+id/tv_CalenderDialog_ShowDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="2021 Aug 12"
+            android:textSize="@dimen/Group_Text_Size"
+            android:layout_marginVertical="@dimen/Small_margin_And_padding"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="@dimen/large_margin_And_padding"
+            android:background="@drawable/divider_style"/>
+        <CalendarView
+            android:id="@+id/Calender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/CalenderViewCustom"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"/>
+
+        <TextView
+            android:id="@+id/tv_DialogCalender_setDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setDate"
+            android:gravity="center"
+            android:textSize="@dimen/Content_Text_Size"
+            android:paddingVertical="@dimen/margin_vertical"
+            android:background="@drawable/add_card_shape"
+            android:layout_marginTop="@dimen/Small_margin_And_padding"
+            android:layout_marginBottom="@dimen/standard_margin_And_padding"
+            android:layout_marginHorizontal="@dimen/Small_margin_And_padding"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_Parent_"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginVertical="100dp"
+    >
+<LinearLayout
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="13dp"
+    android:paddingHorizontal="30dp"
+    android:background="@drawable/background_dialog_shape">
+    <TextView
+        android:id="@+id/tv_add_group_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content_when_empty_group"
+        android:textColor="@color/color_content_text"
+        android:textSize="@dimen/Content_Text_Size"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/av_main_activity_add_group"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/add_group"
+        android:layout_marginTop="12dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_gravity="bottom|center_horizontal"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
+
+
+</FrameLayout>

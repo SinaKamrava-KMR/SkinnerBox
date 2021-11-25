@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_Import_Group"
+        android:title="@string/ImportFile"
+        android:icon="@drawable/ic_import"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/menu_item_Export_Group"
+        android:title="@string/ExportFile"
+        android:icon="@drawable/ic_export"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/menu_item_DeleteAllCards_Group"
+        android:title="@string/deleteAllCards"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="withText"/>
+</menu>

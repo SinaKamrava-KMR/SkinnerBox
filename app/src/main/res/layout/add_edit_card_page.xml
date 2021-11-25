@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarr_EditPAGE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:background="@color/background_items"
+        android:paddingBottom="@dimen/Small_margin_And_padding">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_EditCard_Back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_search_et_back" />
+
+            <ImageView
+                android:id="@+id/iv_EditCard_Favorite"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/iv_EditCard_SaveEdit_AppBar"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/iv_EditCard_SaveEdit_AppBar"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:visibility="visible"
+                android:layout_marginEnd="@dimen/margin_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_tick" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_items2"
+            android:paddingHorizontal="8dp"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            android:paddingBottom="@dimen/standard_margin_And_padding">
+
+            <TextView
+                android:id="@+id/tv_EditCard_BoxNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Small_margin_And_padding"
+                android:layout_marginStart="2dp"
+                android:text="box 1"
+                android:textColor="@color/color_content_text"
+                android:textSize="@dimen/Content_Text_Size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/Small_margin_And_padding"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_EditCard_BoxNumber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_EditCard_BoxNumber">
+
+                <TextView
+                    android:id="@+id/tv_EditCard_falseNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_vertical"
+                    android:text="5"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/Content_Text_Size" />
+
+                <TextView
+                    android:id="@+id/tv_EditCard_reviewNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_vertical"
+                    android:text="8"
+                    android:textColor="@color/blue_Text"
+                    android:textSize="@dimen/Content_Text_Size" />
+
+                <TextView
+                    android:id="@+id/tv_EditCard_trueNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_vertical"
+                    android:text="3"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/Content_Text_Size" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                app:layout_constraintStart_toStartOf="@+id/tv_EditCard_BoxNumber"
+                app:layout_constraintTop_toBottomOf="@+id/tv_EditCard_BoxNumber">
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggleGroup_EditCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    app:checkedButton="@id/btn_EditCard_Front"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_EditCard_Front"
+                        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Front"
+                        android:textColor="@color/white"
+                        android:theme="@style/ThemeButtonColorToggle" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_EditCard_Back"
+                        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:textColor="@color/white"
+                        android:theme="@style/ThemeButtonColorToggle" />
+
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_EditCard_frameCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout5">
+            </FrameLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

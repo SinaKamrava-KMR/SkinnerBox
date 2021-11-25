@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_items"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="@dimen/Group_Text_Size"
+        android:text="@string/title_leitner_guide"/>
+    <ImageView
+        android:id="@+id/iv_back_helpFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_search_et_back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="42dp"
+        android:paddingHorizontal="@dimen/margin_vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/leitner_guide_eng"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Content_Text_Size"
+                android:lineSpacingMultiplier="1.3"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/leit_box"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</FrameLayout>

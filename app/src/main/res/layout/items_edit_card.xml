@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_items2">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/frame_editCard_imageFrontCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="@dimen/Small_margin_And_padding"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/standard_margin_And_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/background_items"
+            app:cardCornerRadius="6dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_EditCard_picFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/download" />
+
+                <FrameLayout
+                    android:id="@+id/frame_EditCard_MoreOptions_FrontPic"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/forground_image_add"
+                    app:layout_constraintEnd_toEndOf="@+id/frame_editCard_imageFrontCard"
+                    app:layout_constraintTop_toTopOf="@+id/frame_editCard_imageFrontCard">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_more" />
+                </FrameLayout>
+
+
+            </FrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/Small_margin_And_padding"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/background_player_edit_card"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/frame_editCard_imageFrontCard"
+        app:layout_constraintStart_toStartOf="@+id/frame_editCard_imageFrontCard"
+        app:layout_constraintTop_toBottomOf="@+id/frame_editCard_imageFrontCard">
+
+        <ImageView
+            android:id="@+id/iv_editCard_playBtnFrontCard"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_play_standard" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_EditCard_Front"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/tv_EditCard_durationPlayerFront"
+            android:layout_toEndOf="@id/iv_editCard_playBtnFrontCard"
+            android:visibility="visible"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/audio_playing"
+            app:lottie_speed="0.4" />
+
+        <TextView
+            android:id="@+id/tv_EditCard_durationPlayerFront"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/Small_margin_And_padding"
+            android:text="00:00" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_EditCard_DeleteFrontVoice"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_shape"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_EditCard_ReplaceFrontVoice"
+        app:layout_constraintEnd_toEndOf="@+id/frame_editCard_imageFrontCard"
+        app:layout_constraintTop_toTopOf="@+id/iv_EditCard_ReplaceFrontVoice"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/iv_EditCard_ReplaceFrontVoice"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/edit_text_shape"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout4"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout4"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout4"
+        app:srcCompat="@drawable/replace" />
+
+    <EditText
+        android:id="@+id/et_EditCard_TextFront"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Small_margin_And_padding"
+        android:background="@drawable/edit_text_shape"
+        android:hint="@string/Enter_your_question"
+        android:paddingVertical="@dimen/margin_vertical"
+        android:textColor="@color/white"
+        android:text="@string/lorem"
+        android:textSize="@dimen/Content_Text_Size"
+        android:textColorHint="@color/color_content_text"
+        android:paddingHorizontal="@dimen/Small_margin_And_padding"
+        app:layout_constraintEnd_toEndOf="@+id/frame_editCard_imageFrontCard"
+        app:layout_constraintStart_toStartOf="@+id/frame_editCard_imageFrontCard"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

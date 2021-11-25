@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Skinner Box</string>
+    <string name="add_group">Add Group</string>
+    <string name="add_new_group">Add New Group</string>
+    <string name="group_name">Group Name</string>
+    <string name="create_group">Create Group : </string>
+    <string name="question">Question</string>
+    <string name="answer">Answer</string>
+    <string name="Enter_your_question">enter your question</string>
+    <string name="false_">False </string>
+    <string name="YouMustAddCard">We must first add a card to view</string>
+    <string name="YouMustAddCardForDelete">The group has no cards</string>
+    <string name="youNotReview">You not Review Today</string>
+    <string name="true_">True</string>
+    <string name="viewAll">view all</string>
+    <string name="viewAllCards">View All Cards</string>
+    <string name="errorEmptyVoice">Can not set empty voice</string>
+    <string name="EmptyVoice">This voice is Empty</string>
+    <string name="DeleteVoiceContents">This sound was successfully removed</string>
+    <string name="DeleteImageContents">This Image was successfully removed</string>
+    <string name="updateCard"> Card was successfully Update</string>
+    <string name="ErrorUpdateCard"> Error : can not update this card</string>
+    <string name="canNotDeleteCard">There was a problem deleting the card</string>
+    <string name="editCard">Edit card</string>
+    <string name="editDone">Edit Done</string>
+    <string name="Enter_your_answer">enter your answer</string>
+    <string name="settings">Settings </string>
+    <string name="upload_image">upload image</string>
+    <string name="Record_Voice">Voice Recording</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+    <string name="setVoice">Set Voice</string>
+    <string name="Show_Answer">Show Answer</string>
+    <string name="skip">Skip </string>
+    <string name="edit">Edit</string>
+    <string name="cards">Cards :</string>
+    <string name="Added_Cards">Added Cards</string>
+    <string name="all_cards">all cards</string>
+    <string name="favorite">favorite</string>
+    <string name="newCardsAdded">new cards</string>
+    <string name="memorized">memorized</string>
+    <string name="search_your_cards">Search your card</string>
+    <string name="export">Export</string>
+    <string name="add_file">Import</string>
+    <string name="chooseFile">Choose File</string>
+    <string name="ImportFile">Import  File</string>
+    <string name="theCardAdded">The card will be added on :</string>
+    <string name="selectedTextFile">You must first select a text file</string>
+    <string name="Card_preparation_table">Card preparation table</string>
+    <string name="my_info" translatable="false">
+        Contact me :
+        \n
+        \n
+        sinakamrava3118@gmail.com
+        \n
+        \n
+        Share your comments and \n
+        suggestions with me
+        \n\n
+    </string>
+    <string name="lorem">A road is a wide way leading from one place to another, especially one with a specially prepared surface which vehicles can use. Roads consist of one or two roadways, each with one or more lanes and any associated sidewalks and road verA road is a wide way leading from one place to another, especially one with a specially prepared surface which vehicles can use. Roads consist of one or two roadways, each with one or more lanes and any associated sidewalks and road ver</string>
+
+    <string name="ImportFileContent" translatable="false">
+        The text file you choose must have a key structure and a value in the form (key: value) and separated by a new Line <br />"\n"
+        For example "\t": <br /><br />
+        "\n" "\n" "\t" "\t" "\t" "\t" "\t" key1: value1 "\n"<br/>"\t" "\t" "\t" "\t" "\t" key2: value2<br />
+    </string>
+    <string name="leitner_guide_eng" translatable="false" >
+        What is Leitner?
+        \n
+\nOne of the best strategies for memorizing words and phrases is following Leitner system principles. "\Dileit"\ is here to helps you memorizing "\Dictionary words"\ and "\Customised items"\ in order to Leitner principles.
+\n\n
+How does it work?\n\n
+Each time you adding a new card in Leitner Box, it will found in the "\New"\ section. In fact, in this section, There are cards which you have never reviewed.
+ \n \n
+When cards of this section reviewed, they will move to "\Review"\ section, while you are reviewing this section, if you don\'t know the answer of card it will place in "\Box1"\ and if you know the answer of card it will place in "\Box2"\.
+\n\nwhile reviewing cards, in each "\Box"\, if you know the answer of card it will move to the next box and if you don\'t know the answer, it will back to "\Box1"\.
+\n
+\nIn the time of reviewing if you know the answer to "\Box5"\ it will move to the next section called "\Learned"\. It means you learned that card.
+\nYou should review each "\box"\ in a specific time which "\Dileit"\ handles it for you:
+        \n
+\nBox1: every day
+\nBox2: every 2 days
+\nBox3: every 4 days
+\nBox4: every 9 days
+\nBox5: every 14 days
+    </string>
+
+    <string name="title_leitner_guide">Leitner Guide</string>
+    <string name="review_time">Review time</string>
+    <string name="front">Front of card :</string>
+    <string name="back">Back of card :</string>
+    <string name="Replace">Replace</string>
+    <string name="setDate">Set Date</string>
+    <string name="CardAdded">Card added successfully</string>
+    <string name="Back">Back of card</string>
+    <string name="cardsToReview"> Cards To Review :</string>
+    <string name="preBuild"> This group has already been created</string>
+    <string name="selectYourFile">Please select your file</string>
+    <string name="delete">Delete</string>
+    <string name="errorForEmptyEt">Group name must not be empty</string>
+    <string name="errorForSingleQuotationEt">The group name must not contain a single quotation mark</string>
+    <string name="help">Help</string>
+    <string name="EditGroupName">Edit Group Name</string>
+    <string name="ToastForAddGroup">Your Group Added</string>
+    <string name="ErrorToastForAddGroup">Can not To Add This Group</string>
+    <string name="about">About</string>
+    <string name="done">Done</string>
+    <string name="ReviewCards">Review Cards :</string>
+    <string name="newCards">New Cards :</string>
+    <string name="startReview">Start Review</string>
+    <string name="MemorizedCards">Memorized Cards :</string>
+    <string name="language">Language</string>
+    <string name="English">English</string>
+    <string name="off">off</string>
+    <string name="on">on</string>
+    <string name="addCards">Add Card</string>
+    <string name="today">Today :</string>
+    <string name="viewCards">View Cards</string>
+    <string name="font">Font</string>
+    <string name="fileName" translatable="false">File path :<br/><br/>"\n""\n" /storage/emulated/0/Android/data/com.mainway.skinnerbox/files/SkinnerBox/</string>
+    <string name="Time">Time :</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Timer">Timer</string>
+    <string name="TimerContent">By activating this option, you must reply to the cards at the specified time</string>
+    <string name="skipOption" translatable="false">Skip Option</string>
+    <string name="deleteAllCards">Delete All Cards</string>
+    <string name="AutoPlayAudio">Auto play audio</string>
+    <string name="seeMoreDetails">See Details Chart</string>
+    <string name="detailsCircularProgressContent">This chart shows the percentage of your progress in learning the cards. Click to see more details</string>
+    <string name="setTheAlarm">Set The Alarm</string>
+    <string name="warningDelete_Ask_Group">Are you sure you want to delete all files?</string>
+    <string name="warningDelete_Ask_Cards">Are you sure you want to delete all Cards?</string>
+    <string name="warningDelete_content">You will no longer have access to this information, so it is best to export your files</string>
+    <string name="Message">Message :</string>
+    <string name="content_default_message">Its time to review the cards. Review the cards to reach the goal</string>
+    <string name="ExportFile">Export File</string>
+    <string name="content_for_reviewAlert">Whenever the cards are reviewed, a notification containing the following message will be sent to you at the specified time.</string>
+    <string name="FileLocation">Default File Location :</string>
+    <string name="favoriteCards">Favorite Cards</string>
+    <string name="deleteAllGroups">Delete All Groups</string>
+    <string name="content_export_all_group">Your text file with the following name will be saved in the selected location</string>
+    <string name="exportInformationAllGroups">Export Cards</string>
+    <string name="ReviewAlert">Review Alert</string>
+    <string name="saveCard">Save</string>
+    <string name="exportAllGroups">Export All Groups</string>
+    <string name="content_details_add_group">The text file with the group name is created in the following path, which contains the text on the card </string>
+    <string name="content_when_empty_group">This way you can create different groups for organization the cards .For example you can put 504 word cards in 504 group and math cards in math group and then review separately.</string>
+</resources>

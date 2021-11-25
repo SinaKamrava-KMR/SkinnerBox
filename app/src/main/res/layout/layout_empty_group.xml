@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/background_page">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/large_margin_And_padding"
+        android:paddingBottom="@dimen/Small_margin_And_padding"
+        android:paddingHorizontal="@dimen/standard_margin_And_padding"
+        android:background="@drawable/background_for_empty_group">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/av_main_activity_add_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/add_group"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center|center_horizontal"/>
+
+
+        <TextView
+            android:id="@+id/tv_add_group_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content_when_empty_group"
+            android:textColor="@color/color_content_text"
+            android:textStyle="italic"
+            android:textSize="@dimen/Content_Text_Size"
+            android:layout_marginBottom="12dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+
+        <RelativeLayout
+            android:id="@+id/RV_empty_group_layout_AddGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+
+            android:background="@drawable/background_add_group"
+            android:layout_marginVertical="@dimen/Small_margin_And_padding">
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Content_Text_Size"
+                android:text="@string/add_group"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/tv_add"
+                app:srcCompat="@drawable/plus"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_ViewAll"
+        android:title="@string/viewAll"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/menu_item_Favorite"
+        android:title="@string/favorite"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/menu_item_newCards"
+        android:title="@string/newCardsAdded"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/menu_item_Memorized"
+        android:title="@string/memorized"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/menu_item_Box1"
+        android:title="box 1"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/menu_item_box2"
+        android:title="box 2"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/menu_item_box3"
+        android:title="box 3"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/menu_item_box4"
+        android:title="box 4"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/menu_item_box5"
+        android:title="box 5"
+        app:showAsAction="withText"/>
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_For_dialogs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/standard_margin_And_padding"
+        android:paddingHorizontal="@dimen/large_margin_And_padding"
+        android:background="@drawable/background_dialog_shape">
+
+        <TextView
+            android:id="@+id/tv_EditGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_group"
+            android:textStyle="italic|bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/margin_vertical"
+            android:textSize="@dimen/Group_Text_Size"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="@dimen/margin_vertical"
+            android:background="@drawable/divider_style"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/details_Text_Size"
+            android:textColor="@color/color_details_text"
+            android:lineSpacingMultiplier="1.2"
+
+
+            android:layout_marginVertical="@dimen/margin_vertical"
+            android:layout_marginEnd="@dimen/Small_margin_And_padding"
+            android:text="@string/content_details_add_group"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_dialog_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/group_name"
+            app:boxStrokeColor="@color/color_details_text"
+            app:hintTextColor="@color/color_details_text"
+            android:theme="@style/TextInputLayoutAppearance"
+            android:textColorHint="@color/color_details_text"
+            android:layout_marginVertical="@dimen/margin_vertical"
+            android:paddingHorizontal="8dp"
+            style="@style/TextInputLayoutStyle">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_dialog_group_EnterGroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tv_dialog_add_group_Done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/Group_Text_Size"
+            android:textColor="@color/white"
+            android:background="@drawable/background_done_btn"
+            android:paddingVertical="@dimen/margin_vertical"
+            android:layout_marginTop="@dimen/standard_margin_And_padding"/>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

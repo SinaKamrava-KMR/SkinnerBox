@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame_fragment_Show"
+    tools:context=".Pages.Main.MainActivity">
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_items2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        app:liftOnScroll="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:background="@drawable/review_shape"
+        android:paddingBottom="@dimen/margin_vertical"
+        android:paddingTop="@dimen/standard_margin_And_padding">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingHorizontal="14dp"
+            android:layout_marginTop="@dimen/Small_margin_And_padding">
+            <ImageView
+                android:id="@+id/iv_search_et_back_main"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_search_et_back"/>
+
+            <EditText
+                android:id="@+id/editText_searchEt_Main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:visibility="gone"
+                android:layout_toStartOf="@id/iv_main_search_group"
+                android:layout_marginHorizontal="6dp"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:imeOptions="actionDone"
+                android:layout_toEndOf="@id/iv_search_et_back_main"
+                android:hint="search"
+                android:textStyle="normal"
+                android:backgroundTint="@color/color_content_text"
+                android:textColorHint="@color/color_details_text"/>
+            <TextView
+                android:id="@+id/tv_titleApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:visibility="visible"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/Title_Text_Size"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:id="@+id/iv_main_more"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                app:srcCompat="@drawable/ic_more"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+            <ImageView
+                android:id="@+id/iv_main_search_group"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                app:srcCompat="@drawable/ic_search_group"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/iv_main_more"
+                android:visibility="visible"
+                android:layout_marginEnd="@dimen/standard_margin_And_padding"/>
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="12dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_main_add_new_Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/plus"
+        android:text="@string/add_group"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        android:backgroundTint="@color/blue_Text"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/standard_margin_And_padding"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_page">#21252c</color>
+    <color name="background_page2">#0D121C</color>
+    <color name="background_Btn1">#2345E6</color>
+    <color name="background_Btn">#151E2B</color>
+    <color name="background_items">#1E242E</color>
+    <color name="background_items2">#151A22</color>
+    <color name="background_For_dialogs">#06080C</color>
+    <color name="tranceParent"></color>
+    <color name="background_Dialog">#28292A</color>
+    <color name="background_AppBar">#232830</color>
+    <color name="grey_1">#33353A</color>
+    <color name="grey_2">#212426</color>
+    <color name="color_content_text">#C7C7C7</color>
+    <color name="blue_light">#218AF2</color>
+    <color name="blue_dark">#002CFF</color>
+    <color name="blue_Text">#1D70FF</color>
+    <color name="end_gradiant">#2040D9</color>
+
+    <color name="color_details_text">#828385</color>
+    <color name="green">#15C55C</color>
+    <color name="orange">#E9A449</color>
+    <color name="red">#FC5566</color>
+    <color name="mtrl_textinput_default_box_stroke_color">@color/color_details_text</color>
+</resources>

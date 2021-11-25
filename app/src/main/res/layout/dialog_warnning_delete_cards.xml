@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_For_dialogs">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingHorizontal="@dimen/Small_margin_And_padding"
+        android:background="@drawable/background_dialog_shape"
+        android:orientation="vertical"
+
+        android:paddingVertical="@dimen/Small_margin_And_padding">
+
+
+        <ImageView
+            android:id="@+id/iv_dialogDelete_"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="75dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_dialogWarningDelete_CancelBtn"
+            app:layout_constraintEnd_toStartOf="@+id/tv_dialog_warning_delete_ask_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_alert" />
+
+        <TextView
+            android:id="@+id/tv_dialog_warning_delete_ask_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/warningDelete_Ask_Group"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_dialogDelete_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_dialogDelete_" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/warningDelete_content"
+            android:textColor="@color/color_details_text"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dialog_warning_delete_ask_text"
+            app:layout_constraintStart_toStartOf="@+id/tv_dialog_warning_delete_ask_text"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dialog_warning_delete_ask_text" />
+
+        <TextView
+            android:id="@+id/tv_dialogWarningDelete_CancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_And_padding"
+            android:background="@drawable/edit_text_shape"
+            android:paddingHorizontal="@dimen/large_margin_And_padding"
+            android:paddingVertical="4dp"
+            android:text="@string/Cancel"
+            android:textSize="13dp"
+            android:textColor="@color/blue_Text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/iv_dialogDelete_"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/tv_dialogWarningDelete_DeleteBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_for_delete_btn"
+            android:paddingHorizontal="@dimen/large_margin_And_padding"
+            android:paddingVertical="4dp"
+            android:text="@string/delete"
+            android:textSize="13dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/Small_margin_And_padding"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_dialogWarningDelete_CancelBtn"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dialog_warning_delete_ask_text"
+            app:layout_constraintStart_toEndOf="@+id/tv_dialogWarningDelete_CancelBtn"
+            app:layout_constraintTop_toTopOf="@+id/tv_dialogWarningDelete_CancelBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_items2"
+    android:paddingHorizontal="@dimen/margin_vertical"
+    android:paddingVertical="@dimen/Small_margin_And_padding">
+
+
+    <ImageView
+        android:id="@+id/iv_ViewCards_BackBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout_ViewCards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout_ViewCards"
+        app:srcCompat="@drawable/ic_search_et_back" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_ViewCards"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/search_border"
+        android:paddingVertical="@dimen/margin_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_ViewCards_BackBtn"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/Small_margin_And_padding"
+            android:layout_marginEnd="@dimen/Small_margin_And_padding"
+            app:srcCompat="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/et_ViewCards_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="@dimen/Small_margin_And_padding"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/search_your_cards"
+            android:textColorHint="@color/color_details_text"
+            android:textSize="@dimen/Content_Text_Size" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_filterCategoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/all_cards"
+        android:textColor="@color/color_content_text"
+        app:layout_constraintEnd_toStartOf="@+id/iv_more_ViewCards_filterMore"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_ViewCards" />
+
+    <ImageView
+        android:id="@+id/iv_more_ViewCards_filterMore"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_filterCategoryText"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout_ViewCards"
+        app:layout_constraintTop_toTopOf="@+id/tv_filterCategoryText"
+        app:srcCompat="@drawable/ic_next" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_filterCategoryText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_filterCategoryText"
+        app:layout_constraintTop_toTopOf="@+id/tv_filterCategoryText"
+        app:srcCompat="@drawable/ic_filter" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView_ViewCards"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout_ViewCards"
+        app:layout_constraintStart_toStartOf="@+id/iv_ViewCards_BackBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
